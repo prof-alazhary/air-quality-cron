@@ -1,0 +1,22 @@
+{
+  "name": "air-quality-cron",
+  "version": "1.0.0",
+  "description": "cron job for the air-quality project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prof-alazhary/air-quality-cron.git"
+  },
+  "keywords": [
+    "#cron-job"
+  ],
+  "author": "Mohamed Alazhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prof-alazhary/air-quality-cron/issues"
+  },
+  "homepage": "https://github.com/prof-alazhary/air-quality-cron#readme"
+}
