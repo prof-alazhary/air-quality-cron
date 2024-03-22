@@ -4,6 +4,7 @@
   "description": "cron job for the air-quality project",
   "main": "index.js",
   "scripts": {
+    "start:dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
   "dependencies": {
     "axios": "^1.6.8",
     "cron": "^3.1.6",
-    "mongoose": "^8.2.3"
+    "mongoose": "^8.2.3",
+    "nodemon": "^3.1.0"
   }
 }
