@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/prof-alazhary/air-quality-cron/issues"
   },
-  "homepage": "https://github.com/prof-alazhary/air-quality-cron#readme"
+  "homepage": "https://github.com/prof-alazhary/air-quality-cron#readme",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cron": "^3.1.6",
+    "mongoose": "^8.2.3"
+  }
 }
