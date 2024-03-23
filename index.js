@@ -1,3 +1,4 @@
+require('dotenv').config();
 const job = require('./src/cron');
 (function () {
     try {
