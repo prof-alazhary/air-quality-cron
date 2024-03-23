@@ -6,8 +6,9 @@ const AirQuality = require('./models/airQualityModel');
 const API_KEY = process.env.API_KEY;
 const IQAIR_API_URL = process.env.IQAIR_API_URL;
 const NEAREST_CITY_API = process.env.NEAREST_CITY_API;
+const CRON_SCHEDULE = process.env.CRON_SCHEDULE;
 
-const job = new CronJob('*/1 * * * *', async () => {
+const job = new CronJob(CRON_SCHEDULE, async () => {
     const latitude = 48.856613;
     const longitude = 2.352222;
 
