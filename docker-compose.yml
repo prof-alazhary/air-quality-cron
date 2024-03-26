@@ -2,7 +2,9 @@ version: '3'
 networks:
   default:
     external:
-      name: airquality_my_network
+      # > docker networks ls (then choose the correct one of the following)
+      # name: airquality_my_network
+      name: air-quality_my_network
 
 services:
   cron_job:

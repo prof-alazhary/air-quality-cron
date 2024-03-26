@@ -1,4 +1,3 @@
-// Import necessary modules and dependencies
 const { CronJob } = require('cron');
 const axios = require('axios');
 const db = require('./config/db');
