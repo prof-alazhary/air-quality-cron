@@ -1,0 +1,18 @@
+version: '3'
+networks:
+  default:
+    external:
+      name: airquality_my_network
+
+services:
+  cron_job:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cron_job
+    restart: always
+    volumes:
+      - .:/app
+
+volumes:
+  mongodb_data:
