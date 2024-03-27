@@ -13,10 +13,9 @@ const job = new CronJob(CRON_SCHEDULE, async () => {
 
     try {
         const response = await axios.get(`${IQAIR_API_URL}${NEAREST_CITY_API}?lat=${latitude}&lon=${longitude}&key=${API_KEY}`);
-
-        console.log(response?.data?.data);
-        const airQualityData = response?.data?.data?.current?.pollution;
-        await AirQuality.create(airQualityData);
+        console.log("responded!");
+        const { city, current: { pollution } } = response?.data?.data;
+        await AirQuality.create({ city: city.toLowerCase(), pollution });
     } catch (error) {
         console.error('Error fetching air quality:', error);
     }
