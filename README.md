@@ -12,6 +12,8 @@ IQAIR_API_URL=http://api.airvisual.com
 NEAREST_CITY_API=/v2/nearest_city
 CRON_SCHEDULE=* * * * *
 ```
+### Important Note: 
+#### This project depends on this [service](https://github.com/prof-alazhary/air-quality) in terms of Dockrization setup "Mongodb service",(They are using the same Database) So please make sure that you've started installation for [this](https://github.com/prof-alazhary/air-quality) first.
 
 Then All what you need to do is:
 
